@@ -1,0 +1,227 @@
+   <style>
+        .container-fluid,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1170px;
+            }
+        }
+
+        body {
+            background-color: #fff;
+            background-color: #fff;
+            /* background-image: url("images/background1.jpg"); */
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        
+
+        .navbar li a {
+            display: block;
+            padding: 13px 20px 11px;
+            margin: 0px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #2c2c2c;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .navbar .home {
+            border: 2px solid #201c1d;
+            border-radius: 3px;
+        }
+
+        .navbar .home a:focus,
+        .navbar .home a:hover {
+            color: #2c2c2c !important;
+        }
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+            color: #fff !important;
+            background-color: #23B5E1 !important;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            z-index: 1 !important;
+            width: 100%;
+            box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+        }
+
+        .sticky2 {
+            padding-top: 4.313rem;
+        }
+
+        /* .sticky2 {
+            padding-top: 6rem;
+        } */
+
+        .spacer {
+            height: 6px;
+            width: 49px;
+            background-color: #23B5E1;
+        }
+
+        .subjects h2 {
+            font-size: 42px;
+            font-weight: 300;
+            line-height: 1.52;
+            margin-top: 24px;
+            margin-bottom: 40px;
+        }
+
+        .subjects-item {
+            margin-bottom: 40px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+            min-height: 200px;
+            position: relative;
+        }
+
+        .subjects-item-image {
+            width: 200px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .subjects-item-text {
+            background-color: #fff;
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .subjects-item-text-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-grow: 1;
+        }
+
+        .subjects-item-title-subtext {
+            font-size: 12px;
+            line-height: 18px;
+            opacity: .5;
+            margin-top: 4px;
+        }
+
+
+        .btn-primary-gradient {
+            text-transform: uppercase;
+            padding: 13px 21px;
+            border: none;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 1.25px;
+            font-stretch: normal;
+            background: linear-gradient(153deg, #45dbf2, #23B5E1);
+            color: #fff;
+
+        }
+
+        .btn-primary-gradient:hover {
+            color: #fff !important;
+            background: linear-gradient(153deg, #007bff, #45dbf2);
+        }
+
+        .grad:hover {
+            color: #343a40 ;
+            background-color: transparent ;
+            border-color: #343a40;
+        }
+
+        /* .card {
+            border-top: 3px solid #0facce;
+            padding-bottom: 12px;
+        }
+
+        .card li {
+            padding-bottom: 0px;
+        }
+
+        .card .col {
+            padding-left: 0;
+        }
+
+        .card img {
+            border-radius: 3px
+        } */
+
+
+    </style>
+
+    
+
+    <div class="row" style="height: 655px; margin-top: 0px;">
+        <article class="col-sm-12"> 
+            <div class="container contact-form"  style="opacity: 0.9; padding: 50px;">
+                <form method="post">
+                    <h3>Gửi góp ý cho chúng tôi</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtName" class="form-control" placeholder="Tên Của Bạn *"
+                                    value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtEmail" class="form-control" placeholder="Email Của Ban *"
+                                    value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtPhone" class="form-control" placeholder="Số Điện Thoại *"
+                                    value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg" class="form-control" placeholder="Lời Nhắn Của Bạn *"
+                                    style="width: 100%; height: 150px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>

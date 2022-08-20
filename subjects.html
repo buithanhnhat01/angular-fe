@@ -1,0 +1,24 @@
+<style>
+    #content {
+        margin-top: 0!important;
+        padding-top: 100px;
+    }
+</style>
+<div class="container my-5" id="content">
+    <div class="row">
+        <div class="col-6 subjects-item" ng-repeat="item in list_subject">
+            <div class="subjects-item-image" style="opacity: 0.9;">
+                <img src="images/logos/{{item.Logo}}" width="130px">
+            </div>
+            <div class="subjects-item-text" style="opacity: 0.9;">
+                <div class="subjects-item-text-main">
+                    <div>
+                        <div><b>{{item.Name}}</b></div>
+                        <div class="subjects-item-title-subtext">Test online - Chắc kiến thức, vững tương lai</div>
+                    </div>
+                    <a class="btn btn-primary-gradient" onlick="" href="#!quiz/{{item.Id}}/{{item.Name}}" role="button">Test ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

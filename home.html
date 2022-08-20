@@ -1,0 +1,182 @@
+
+
+
+    <div>
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">HÃY ĐẾN VỚI CHÚNG TÔI</h2>
+                <div class="text-description">
+                    Các bạn sẽ được trãi nghiệm những thứ chưa từng gặp, với đội ngũ giáo viên nhiệt tình sẽ giúp các bạn có đầy đủ hành trang kiến thức để bương chải với đời.
+                </div>
+            </div>
+        </div>
+        <style>
+            #slider {
+                position: relative;
+                margin-top: 0px;
+                padding-top: 50%;
+                background: url(../images/slide3.jpg) top center / cover no-repeat;
+            }
+
+            #slider .text-content {
+                position: absolute;
+                bottom: 150px;
+                color: white;
+                width: 100%;
+                /* left: 50%;
+    transform: translate(-50%); */
+                text-align: center;
+                text-shadow: 0 0 5px black;
+            }
+
+            #slider .text-heading {
+                font-weight: 500;
+                font-size: 24px;
+            }
+
+            #slider .text-description {
+                font-size: 15px;
+                margin-top: 25px;
+                text-shadow: 0 0 5px black;
+            }
+        </style>
+    </div>
+    <div class="headline-1">
+        <h3 style="text-align: center;">TIN TỨC VÀ HOẠT ĐỘNG</h3>
+        <style>
+            .headline-1 {
+                padding-top: 50px;
+                padding-bottom: 30px;
+                text-align: center;
+
+            }
+
+            h3 {
+                font-size: 18px;
+                color: #111;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                border: 1px solid #bebebe;
+                display: inline-block;
+                color: #555;
+                font-weight: 600;
+            }
+
+            img {
+
+                cursor: pointer;
+
+
+            }
+        </style>
+    </div>
+    <div class="container my-5" id="content" ng-controller="quizCtrl">
+        <div class="row" style="height: 600px; margin-top: 1px; margin-left: 11px;">
+            <article class="col-sm-9 anh-img">
+                <div class="card-deck ">
+                    <div class="card " style="opacity: 0.9;">
+                        <img class="card-img-top" src="./images/slide3.jpg" alt="image1">
+                        <div class="card-body">
+                            <h5 class="card-title"><a>Các hoạt động tháng 3/2022</a></h5>
+                            <p class="card-text">Các hoạt động tháng 3/2022</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card" style="opacity: 0.9;">
+                        <img class="card-img-top" src="./images/slide3.jpg" alt="image2">
+                        <div class="card-body">
+                            <h5 class="card-title"><a>Khai giảng khóa V5.5</a></h5>
+                            <p class="card-text">Khai giảng khóa V5.5
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card" style="opacity: 0.9;">
+                        <img class="card-img-top" src="./images/slide3.jpg" alt="image3">
+                        <div class="card-body">
+                            <h5 class="card-title"><a>Một số kĩ thuật kiểm thử</a></h5>
+                            <p class="card-text">Kĩ thuật kiểm thử</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="card-deck">
+                    <div class="card" style="opacity: 0.9;">
+                        <img class="card-img-top" src="./images/slide3.jpg" alt="image4">
+                        <div class="card-body">
+                            <h5 class="card-title"><a>Hoạt động ngoại khóa v6.4</a></h5>
+                            <p class="card-text">Hoạt động ngoại khóa tháng 2/2022</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card" style="opacity: 0.9;">
+                        <img class="card-img-top" src="./images/slide3.jpg" alt="image5">
+                        <div class="card-body">
+                            <h5 class="card-title"><a>Danh sách đóng học phí khóa CSDL - 12.5</a></h5>
+                            <p class="card-text">Danh sách đóng học phí
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card" style="opacity: 0.9;">
+                        <img class="card-img-top" src="./images/slide3.jpg" alt="image6">
+                        <div class="card-body">
+                            <h5 class="card-title"><a>Phòng Test mới dành cho Intern khóa 1.1</a></h5>
+                            <p class="card-text">Cơ sở hạ tầng</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <nav aria-label="Page navigation example" style="opacity: 0.8;">
+                    <ul class="pagination justify-content">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+            <aside class="col-sm-3 anh-img" style="opacity: 0.9;">
+                <div class="card card poly-cart" data-toggle="collapse" href="#monhoc">
+                    <div class="card-header" style="cursor: pointer;"><a style="text-decoration: none;"><b>Danh mục môn
+                                học!!</b></a>
+                    </div>
+                    <ul class="list-group list-group-flush card-collapse" id="monhoc">
+                        <li class="list-group-item">Lập trình Java</li>
+                        <li class="list-group-item">Cơ sở dữ liệu</li>
+                        <li class="list-group-item">Lập trình Android nâng cao</li>
+                        <li class="list-group-item">Lập trình Android cơ bản</li>
+                        <li class="list-group-item">Thiết kế Website</li>
+                        <li class="list-group-item">Lập trình JavaScript</li>
+                        <li class="list-group-item">Lập trình PHP</li>
+                        <li class="list-group-item">Lập Trình HTML5</li>
+                        <li class="list-group-item">Phát Triển Game</li>
+                        <li class="list-group-item">ASP.NET</li>
+                        <li class="list-group-item">SQL Server nâng cao</li>
+                        <li class="list-group-item">Quản lý dự án với Agile</li>
+                        <li class="list-group-item">Thiết kế layout</li>
+                        <li class="list-group-item">Lập trình VB.NET</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+

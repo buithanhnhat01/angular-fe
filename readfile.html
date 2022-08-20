@@ -1,0 +1,40 @@
+<style>
+.readfile {
+    top: 100px;
+}
+</style>
+
+
+<div ng-controller="studentCtrl">
+    <div class="col-sm-8 offset-sm-2 readfile" style="background-color: white; margin-top: px; opacity: 0.9;">
+        <div class="card-header text-center">
+            <strong>Danh sách sinh viên</strong>
+        </div>
+        <div class="card-body fadeIn second">
+            <div>
+                <table class="table table-light fadeIn second" style="background-color: white;">
+                    <tr>
+                        <th>Tên</th>
+                        <th>Tên đầy đủ</th>
+                        <th>Gmail</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                        <th>Học phí</th>
+                        <th>Điểm</th>
+                    </tr>
+                    <tr ng-repeat="st in list_student">
+                        <td>{{st.username}}</td>
+                        <td>{{st.fullname}}</td>
+                        <td>{{st.email}}</td>
+                        <td>{{st.gender}}</td>
+                        <td>{{st.birthday}}</td>
+                        <td>{{st.schoolfee}}</td>
+                        <td>{{st.marks}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>

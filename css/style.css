@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    width: 102.5%;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background: #2a2730;
+
+}
+.logo{
+    flex: 1;
+}
+.menu{
+    flex: 4;
+    display: flex; /* hang ngang */
+    
+    
+}
+.menu>li{
+    padding: 0 12px;/* khoang cach các hàng */
+    position: relative;
+}
+.menu li a{
+    font-size: 12px;
+    font-weight: bold!important;
+    display: block;
+    line-height: 20px;
+}
+.menu>li:hover .sub-menu{
+    display: block;
+}
+.menu>li:hover>a{
+    color: orange;
+}
+/*---------------------------------------------------------- menu danh mục--------------------------------------------------------*/
+.sub-menu{
+    position: absolute;
+    width: 250px;
+    border: 1px solid #2a2730;
+    padding: 10px 0 10px 20px;
+    display: none;
+    z-index: 1000;
+    background-color: #2a2730;
+}
+.sub-menu ul{
+    padding: 10px;
+    
+}
+.sub-menu ul a {
+    font-weight: normal!important;
+    font-size: 12px!important;
+}
+
+.others{
+    display: flex;
+    margin-right: 15px; 
+    
+    
+}
+.others>li{
+    padding: 0 12px;
+    position: relative;
+}
+.others>li:first-child{
+    position: relative;
+}
+.others>li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+.others>li:first-child i{
+    position: absolute;
+    right:  12px;
+    margin-top: 3px;
+}
+/* -----------------------------------------------------------menu tài khoản--------------------------------------------------------- */
+.others>li:hover .sub-menu1{
+    display: block;
+    cursor: pointer;
+}
+.sub-menu1{
+    position: absolute;
+    width: 150px;
+    border: 1px solid #2a2730;
+    padding: 10px 0 10px 20px;
+    display: none;
+    z-index: 1000;
+    background-color: #2a2730;
+}
+.sub-menu1 ul{
+    padding: 1px;
+    
+}
+.sub-menu1 ul a {
+    font-weight: normal!important;
+    font-size: 12px!important;
+}
+
+.sub-menu li:hover>a,
+.sub-menu1>li:hover a,
+.sub-menu>li:hover>a,
+.others>li:hover>a {
+    color: orange;
+}
+
+/* 
+----------------------------------------------------------------slide------------------------------------------------------------*/
+#Slider{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    /* border-bottom: 2px solid #000; */
+    overflow: hidden;
+    
+    
+   
+}
+.aspect-ratio-169{
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+}
+.aspect-ratio-169 img{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dot-container{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 12px ;
+    cursor: pointer;
+
+}
+.dot-active{
+    background-color: #ccc;
+}
+.prose h3 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(243 244 246);
+
+    /* @apply mb-1 pb-2 border-b border-gray-200; */
+  }
+
+  .prose iframe {
+    width: 100%;
+    margin-top: 1.5rem;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.75rem;
+
+    /* @apply w-full aspect-video mt-6 rounded-xl; */
+  }
+  /*-----------------------------------------------------app-------------------------------------------------*/
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+.app-google{
+    margin: 50px;
+
+}
+.app-google img{
+    height: 50px;
+}
+.app-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+}
+  /*----------------------------------------------------footer--------------------------------------------------*/
+footer{
+    
+}
+

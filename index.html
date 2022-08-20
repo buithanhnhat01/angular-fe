@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/software.png" type="image/x-icon">
+    <title>SOFTWARE</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/angular-route.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookies/1.8.2/angular-cookies.js"></script>
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body ng-app="myApp">
+        <header class="row">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        	<div class="logo">
+                <img src="/images/logo.png" width="120px">
+            </div>
+            <div class="menu" ng-controller="loginCtrl">
+                <li><a  href="#/!">TRANG CHỦ</a><span class="sr-only">(current)</span></li>
+                <li><a  href="#!gioithieu">GIỚI THIỆU</a></li>
+                <li><a  href="">TUYỂN DỤNG</a></li>
+                <li><a  href="">TIN TỨC & SỰ KIỆN</a></li>
+                <li><a  href="#!lienhe">LIÊN HỆ</a></li>
+                <li><a  href="#!gopy">GÓP Ý</a></li>
+                <li><a  href="#!hoidap">HỎI ĐÁP</a></li>
+                <li><a  ng-hide="index==-1" href="#!subjects">CHƯƠNG TRÌNH ĐÀO TẠO</a>
+                    <ul class="sub-menu">
+                        <li><a href=""> Lập trình</a>
+                            <ul>
+                                <li><a href="">Lập trình Android nâng cao</a></li>
+                                <li><a href="">Lập trình ASP NET</a></li>  
+                                <li><a href="">Lập trình android cơ bản</a></li>
+                                <li><a href="">Lập trình game 2D</a></li>
+                                <li><a href="">Lập trình hướng đối tượng Java</a></li>
+                                <li><a href="">Lập Trình PHP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Thiết kế</a>
+                            <ul>
+                                <li><a href="">Thiết kế giao diện trên android</a></li>
+                                <li><a href="">Thiết kế web điện thoại di động</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">CSDL</a>
+                            <ul>
+                                <li><a href="">Cơ sở dử liệu</a></li>
+                                <li><a href="">SQL Server</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Xây dựng trang web</a></li>
+                       
+                       
+                        
+                        <li><a href="">Internet Marketing</a></li>
+                        <li><a href="">Điện toán đám mây</a></li>
+                       
+                        
+                        
+                    </ul>
+                </li>
+            </div>
+            
+            <div class="others">
+                <!-- <li><input placeholder="Tìm Kiếm" type="text"><i class="fa fa-search"></i></li> -->
+            <li ng-controller="loginCtrl"><a class="fa fa-user" href="#" >{{account}}
+
+            </a>
+                <ul class="sub-menu1">
+                
+                        
+                            <li><a ng-show="index==-1" href="#!dangnhap">Đăng nhập</a></li>
+                            <li><a ng-show="index==-1" href="#!dangki">Đăng ký</a></li>
+                            <li><a ng-hide="index==-1" ng-click="logout()" href="#!/">Đăng xuất</a></li>
+                            <br>
+                            <li><a  href="#!quenmk">Quên mật khẩu</a></li>
+                            <li><a ng-hide="index==-1" href="#!doimk">Đổi mật khẩu</a></li>
+                            <>
+                            <li><a ng-hide="index==-1" href="#!infor">Cập nhật tài khoản</a></li>
+                            <li><a ng-hide="index==-1" href="#!read">Danh sách</a></li>
+                            
+                        
+                        
+                    
+                </ul>
+                <li ng-controller="loginCtrl"><a class="fa fa-address-card" href="#" >
+                </a>
+                <li ng-controller="loginCtrl"><a class=" fa fa-flag" href="#" >
+                </a>
+            </li>	
+            </div>
+        </header>     
+            
+       
+    
+    <!--view page-->
+    
+    <div ng-view>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <footer id="12345" class="footer">
+        <style>
+            .footer {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: #99979c;
+                background-color: #2a2730;
+                margin-top: 30px;
+            }
+
+            .footer a {
+                color: white;
+            }
+
+            .footer a:focus,
+            .footer a:hover {
+                color: orange !important;
+                text-decoration: none !important;
+            }
+
+            .footer p {
+                margin-bottom: 0rem !important;
+            }
+        </style>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="" class="img-fluid" title="FPT Polytechnic DN"
+                                    width="150">
+                            </a>
+                        </li>
+                        <li class="list-inline-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="list-inline-item"><a href="about.html">Giới thiệu</a></li>
+                        <li class="list-inline-item"><a href="support/contact.html">Liên hệ</a></li>
+                    </ul>
+                    <p>Được thiết kế với nỗi nhớ vô hạn trong mùa <a href="https://www.who.int/" rel="noopener"
+                            target="_blank" title="COVID-19">COVID-19</a> bởi <a href="https://github.com/gitfirstteam"
+                            rel="noopener" target="_blank" title="Thanh Nhât">Thanh Nhật</a>.</p>
+                    <p>Copyright © 2020 FRONT-END. All rights reserved.</p>
+                </div>
+                <div class="col-12 col-sm-auto mt-2">
+                    <a href="https://github.com/gitfirstteam" rel="noopener" target="_blank" title="Github"
+                        style="margin-right: 15px;text-decoration: none !important;">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC4Gp7xLOt0MxnCzJB-qzCwg" rel="noopener" target="_blank"
+                        title="Youtube">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    // var content = document.getElementById("content");
+    var banner = document.getElementById("banner");
+    var sticky = 350;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+            // content.classList.add("sticky2");
+            banner.classList.add("sticky2");
+        } else {
+            navbar.classList.remove("sticky");
+            // content.classList.remove("sticky2");
+            banner.classList.remove("sticky2");
+        }
+    }
+
+</script>
+
+</html>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>

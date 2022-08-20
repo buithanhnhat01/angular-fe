@@ -1,0 +1,63 @@
+<style>
+    .mgt{
+        margin-top: 20px;
+    }
+    
+</style>
+    <div class="container" ng-controller="loginCtrl" style="height: 500px; padding: 30px;">
+    </br>
+    </br>
+    <article class="col-sm-12">
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <a href="index.html"><img src="images/logo.png" id="icon" alt="User Icon" style="margin-top: 10px;" height="15px"/><a>
+                </div>
+
+                <!-- Login Form -->
+                <form name="frmRegister">
+
+                    <H1>Thông tin người dùng</H1>
+                    <br>
+                    <label class="" for=""><strong>Tên tài khoản</strong></label>
+                    <br>
+                    <h8 class="mgt fadeIn second">{{usernamer}}</h8>
+                    <br>
+                    <label class="mgt" for=""><strong>Họ và tên</strong></label>
+                    <br>
+                    <h8 class="fadeIn second mgt">{{fullnamer}}</h8>
+                    <br>
+                    <label class="mgt" for=""><strong>Giới tính</strong></label>
+                    <br>
+                    <h8 class="fadeIn second mgt">{{genderr}}</h8>
+                    <br>
+                    <label class="mgt" for=""><strong>Học phí</strong></label>
+                    <br>
+                    <h8 class="fadeIn second mgt">{{schoolfeer | currency : "VND - " : 0}}</h8>
+                    <br>
+                    <label class="mgt" for=""><strong>Ngày sinh</strong></label>
+                    <br>
+                    <h8 class="fadeIn second mgt">{{birthdayr}}</h8>
+                    <br>
+                    <label class="mgt" for=""><strong>Email</strong></label>
+                    <br>
+                    <h8 class="fadeIn second mgt">{{emailr}}</h8>
+                    <br>
+                    <label class="mgt" for=""><strong>Password</strong></label>
+                    <br>
+                    <h8 class="fadeIn second mgt">{{passwordr}}</h8>
+                    <br>
+                    <p class="mgt" style="color: red;">(*) Hãy bảo mật thông tin!</p>
+                </form>
+
+                <!-- Remind Passowrd -->
+                <div id="formFooter">
+                    <a class="underlineHover" href="#!quenmk" style="text-decoration: none;">Quên Mật Khẩu ?</a>
+                </div>
+
+            </div>
+        </div>
+    </article>
